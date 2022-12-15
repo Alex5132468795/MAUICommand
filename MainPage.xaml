@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label x:Name="BB">
+                
+            </Label>
+            <HorizontalStackLayout>
+                <Button x:Name="BB1" Command="{Binding CDommand}" CommandParameter="1"></Button>
+                <Button x:Name="BB2" Command="{Binding CDommand}" CommandParameter="2"></Button>
+                <Button x:Name="BB3" Command="{Binding CDommand}" CommandParameter="3"></Button>
+                <Switch Toggled="Switch_Toggled">
+                    
+                </Switch>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Button x:Name="BB4" Command="{Binding Command2}" CommandParameter="4"></Button>
+                <Button x:Name="BB5" Command="{Binding Command2}" CommandParameter="5"></Button>
+                <Button x:Name="BB6" Command="{Binding Command2}" CommandParameter="6"></Button>
+                <Switch Toggled="Switch_Toggled_1">
+
+                </Switch>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Button x:Name="BB7" Command="{Binding Command3}" CommandParameter="7"></Button>
+                <Button x:Name="BB8" Command="{Binding Command3}" CommandParameter="8"></Button>
+                <Button x:Name="BB9" Command="{Binding Command3}" CommandParameter="9"></Button>
+                <Switch Toggled="Switch_Toggled_2">
+
+                </Switch>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
